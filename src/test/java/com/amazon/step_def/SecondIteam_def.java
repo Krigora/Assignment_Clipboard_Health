@@ -17,7 +17,7 @@ public class SecondIteam_def {
     @When("should be display {string}")
 
     public void should_be_display(String string) {
-browserUtils.switchToWindow(secondItem);
+
 
 
             String expected = "About this item";
