@@ -15,8 +15,6 @@ public class SecondIteam_def {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
 
-
-
     @When("should be display {string}")
 
     public void should_be_display(String string) {

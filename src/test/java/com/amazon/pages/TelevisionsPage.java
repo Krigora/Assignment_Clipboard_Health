@@ -22,7 +22,6 @@ public class TelevisionsPage extends PageBase{
     public WebElement HighToLow;
 
 
-
 @FindBy(xpath ="//div[@cel_widget_id='MAIN-SEARCH_RESULTS-2']")
     public WebElement secondHighPricedItem;
 }

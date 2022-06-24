@@ -17,14 +17,7 @@ public class Hooks {
 
         @After
         public void tearDownScenario(Scenario scenario) {
-            /**
-             * Scenario scenario: represents current running cucumber scenario
-             * -cast webdriver to TakesScreenshot interface.(TakesScreenshot)Driver.getDriver()
-             * -call getScreenShotAs method and output type as OutputType.BYTES
-             * -save the result into byte[] array: byte[] image
-             * -attach the image into the scenario html report: scenario.attach(image, "image/png", scenario.getName());
-             * -if scenario fails for any reason, it will automatically take a screenshot and attach to html report
-             */
+
             if(scenario.isFailed()) {
                 byte[] image = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
                 scenario.attach(image, "image/png", scenario.getName());

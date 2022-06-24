@@ -40,19 +40,6 @@ homePage.Televisions.click();
         televisionsPage.Sumsung.click();
 
     }
-//    @Then("dashboard should be displayed")
-//    public void dashboard_should_be_displayed() {
-//        String expected = "Samsung";
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-//        wait.until(ExpectedConditions.urlContains(expected));
-//
-//        String actual = Driver.getDriver().getCurrentUrl();
-//        System.out.println("actual = " + actual);
-//        ;
-//
-//        Assert.assertTrue(actual.contains(expected));
-//        Driver.closeDriver();
-//    }
 
 
 }
