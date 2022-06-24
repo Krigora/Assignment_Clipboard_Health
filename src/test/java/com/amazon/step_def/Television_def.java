@@ -18,8 +18,7 @@ televisionsPage.SortBy.click();
 
     @When("I click on HightToLow button")
     public void i_click_on_hight_to_low_button() {
-       // WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-       // wait.until(ExpectedConditions.urlContains(expected));
+
 televisionsPage.HighToLow.click();
     }
 
@@ -28,17 +27,5 @@ televisionsPage.HighToLow.click();
 televisionsPage.secondHighPricedItem.click();
     }
 
-//    @When("should be display {string}")
-//    public void should_be_display(String string) {
-//        String expected = "About this item";
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-//        wait.until(ExpectedConditions.urlContains(expected));
-//
-//        String actual = Driver.getDriver().getCurrentUrl();
-//        System.out.println("actual = " + actual);
-//        ;
-//
-//        Assert.assertTrue(actual.contains(expected));
-//        Driver.closeDriver();
-//    }
+
 }

@@ -5,14 +5,28 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SecondItem extends PageBase{
+public class SecondItem extends PageBase {
 
-    public SecondItem(){
+    public SecondItem() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-@FindBy(xpath = "//iframe[@srcdoc='<!DOCTYPE html>']")
-    public WebElement NewWindow;
 
 
+    @FindBy(xpath = "//h1[contains(text(),'About this item ')]")
+    public WebElement AboutItem;
+
+
+
+//    public static void switchToWindow(String targetTitle) {
+//        String origin = Driver.getDriver().getWindowHandle();
+//        for (String handle : Driver.getDriver().getWindowHandles()) {
+//            Driver.getDriver().switchTo().window(handle);
+//            if (Driver.getDriver().getTitle().equals(targetTitle)) {
+//                return;
+//            }
+//
+//
+//        }
+//    }
 }

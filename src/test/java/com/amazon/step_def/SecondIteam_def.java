@@ -14,23 +14,29 @@ public class SecondIteam_def {
     BrowserUtils browserUtils = new BrowserUtils();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
+
+
+
     @When("should be display {string}")
 
     public void should_be_display(String string) {
+BrowserUtils.switchToWindow("Samsung-Ultra-Smart-QA65QN85AAKLXL");
 
-///
+        String expected = "Samsung-Ultra-Smart-QA65QN85AAKLXL";
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.urlContains(expected));
 
-            String expected = "About this item";
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-            wait.until(ExpectedConditions.urlContains(expected));
-
-            String actual = Driver.getDriver().getCurrentUrl();
-            System.out.println("actual = " + actual);
+        String actual = Driver.getDriver().getCurrentUrl();
+        System.out.println("actual = " + actual);
 
 
-            Assert.assertTrue(actual.contains(expected));
-            Driver.closeDriver();
-        }
+        Assert.assertTrue(actual.contains(expected));
+
+
+
+    System.out.println(secondItem.AboutItem.getText());
+
+    }
 
 
     }

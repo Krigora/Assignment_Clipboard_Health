@@ -33,7 +33,7 @@ public class BrowserUtils {
                 return;
             }
         }
-        Driver.getDriver().switchTo().window(origin);
+     //   Driver.getDriver().switchTo().window(origin);
     }
 
     public static void hover(WebElement element) {
